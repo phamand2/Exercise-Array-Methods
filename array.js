@@ -42,18 +42,57 @@
 
 // Question 4
 
-const numbers = 86375309
+// const numbers = 86375309
 
 
-const together = (nums)=>{
-  const arr = []
-  const str = nums.toString()
-  for (let i = 0; i < str.length; i++) {
-      const element = str[i];
-      arr.push(element)
+// const together = (nums)=>{
+//   const arr = []
+//   const str = nums.toString()
+//   for (let i = 0; i < str.length; i++) {
+//       const element = str[i];
+//       arr.push(element)
       
-  }
-  const final = arr.join('-')
-  console.log(final)
+//   }
+//   const final = arr.join('-')
+//   console.log(final)
+// }
+// together(numbers)
+
+// Question 5
+
+// const sortItem = (arr) => {
+//   return arr.sort()
+// }
+
+// console.log(sortItem([4,1,3,5]))
+
+// Question 7
+
+// const swapCase = (inputString) => {
+//   let outputString = ' ';
+//   inputString.split().forEach(character => {
+//     if (character == character.toUpperCase()) {
+//       outputString += character.toLowerCase();
+//     } else if (character == character.toLowerCase()) {
+//       outputString += character.toUpperCase();
+//     }  
+//   });
+//   return outputString
+// }
+
+// console.log(swapCase('The Quick Brown Fox'))
+
+// Question 8
+
+const arr = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]]
+
+const printNestedArray = (array) => {
+  array.forEach(element => {
+    element.forEach(nestedElement => {
+      console.log(nestedElement)
+    })
+    
+  });
 }
-together(numbers)
+
+printNestedArray(arr)
